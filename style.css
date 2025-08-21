@@ -1,0 +1,22 @@
+
+:root{ --primary:#059669; --secondary:#065f46;}
+*{box-sizing:border-box}
+.hero-bg{background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('C:/Users/RAHUL KUMAR/Downloads/Amrutam-Project/DOCTOR BANNER.jpg') center/cover no-repeat;}
+.navlink{color:#374151}
+.navlink:hover{color:var(--primary)}
+.mobilelink{display:block;padding:.5rem 0;color:#374151}
+.btn-primary{background:var(--primary);color:#fff;padding:.6rem 1rem;border-radius:.5rem;display:inline-block}
+.btn-primary:hover{background:var(--secondary)}
+.btn-outline{border:1px solid var(--primary);color:var(--primary);padding:.5rem 1rem;border-radius:.5rem}
+.btn-outline:hover{background:var(--primary);color:#fff}
+.stat{font-weight:700;font-size:2rem;color:var(--primary)}
+.stat-label{color:#6b7280}
+.h1{font-weight:700;font-size:2rem}
+.h2{font-weight:700;font-size:1.5rem}
+.h3{font-weight:600;font-size:1.125rem}
+.input{width:100%;padding:.6rem .8rem;border:1px solid #e5e7eb;border-radius:.5rem}
+.input:focus{outline:none;box-shadow:0 0 0 3px rgba(5,150,105,.25);border-color:transparent}
+.label{display:block;font-weight:500;color:#374151}
+.card{background:#fff;border:1px solid #f3f4f6;border-radius:1rem;padding:1rem}
+.dark .card{background:#111827;border-color:#1f2937}
+.dark body{background:#111827;color:#e5e7eb}

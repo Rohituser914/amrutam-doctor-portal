@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onboarding | Amrutam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#059669', secondary: '#065f46' },
+          fontFamily: { sans: ['Poppins','sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span class="text-xl font-bold text-primary">Amrutam</span>
+        </a>
+        <button id="mobileToggle" class="md:hidden p-2 rounded hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div id="menu" class="hidden md:flex space-x-6 items-center">
+          <a class="navlink" href="index.html">Home</a>
+          <a class="navlink" href="about.html">About</a>
+          <a class="navlink" href="services.html">Services</a>
+          <a class="navlink" href="doctors.html">Doctors</a>
+          <a class="navlink" href="booking.html">Booking</a>
+          <a class="navlink" href="onboarding.html">Onboarding</a>
+          <a class="navlink" href="faq.html">FAQ</a>
+          <a class="navlink" href="testimonials.html">Testimonials</a>
+          <a class="navlink" href="contact.html">Contact</a>
+          <a class="px-4 py-2 rounded-md bg-primary text-white hover:bg-secondary" href="signup.html">Login/Signup</a>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden mt-2 space-y-2">
+        <a class="mobilelink" href="index.html">Home</a>
+        <a class="mobilelink" href="about.html">About</a>
+        <a class="mobilelink" href="services.html">Services</a>
+        <a class="mobilelink" href="doctors.html">Doctors</a>
+        <a class="mobilelink" href="booking.html">Booking</a>
+        <a class="mobilelink" href="onboarding.html">Onboarding</a>
+        <a class="mobilelink" href="faq.html">FAQ</a>
+        <a class="mobilelink" href="testimonials.html">Testimonials</a>
+        <a class="mobilelink" href="contact.html">Contact</a>
+        <a class="mobilelink" href="signup.html">Login/Signup</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="h1">Patient Onboarding</h1>
+      <ol class="mt-6 space-y-4">
+        <li class="card"><strong>Step 1:</strong> Create account and fill health questionnaire.</li>
+        <li class="card"><strong>Step 2:</strong> Choose your doctor and preferred slot.</li>
+        <li class="card"><strong>Step 3:</strong> Complete secure payment.</li>
+        <li class="card"><strong>Step 4:</strong> Join video consult and receive plan.</li>
+        <li class="card"><strong>Step 5:</strong> Track progress & schedule follow-ups.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="bg-gray-50 mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <h3 class="font-bold text-lg">Amrutam</h3>
+        </div>
+        <p class="text-gray-600 text-sm">Authentic Ayurvedic consultation platform connecting patients with certified doctors.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Company</h4>
+        <ul class="space-y-2 text-gray-600">
+          <li><a href="about.html" class="hover:text-primary">About</a></li>
+          <li><a href="services.html" class="hover:text-primary">Services</a></li>
+          <li><a href="doctors.html" class="hover:text-primary">Doctors</a></li>
+          <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Support</h4>
+        <ul class="space-y-2 text-gray-600">
+          <li><a href="faq.html" class="hover:text-primary">FAQ</a></li>
+          <li><a href="#" class="hover:text-primary">Terms</a></li>
+          <li><a href="#" class="hover:text-primary">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Get the app</h4>
+        <div class="space-y-2">
+          <a class="inline-block bg-black text-white px-4 py-2 rounded-lg" href="#">App Store</a>
+          <a class="inline-block bg-black text-white px-4 py-2 rounded-lg" href="#">Google Play</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t py-4 text-center text-sm text-gray-500">
+      © 2025 Amrutam. All rights reserved.
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

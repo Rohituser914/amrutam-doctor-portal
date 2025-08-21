@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctors | Amrutam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#059669', secondary: '#065f46' },
+          fontFamily: { sans: ['Poppins','sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span class="text-xl font-bold text-primary">Amrutam</span>
+        </a>
+        <button id="mobileToggle" class="md:hidden p-2 rounded hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div id="menu" class="hidden md:flex space-x-6 items-center">
+          <a class="navlink" href="index.html">Home</a>
+          <a class="navlink" href="about.html">About</a>
+          <a class="navlink" href="services.html">Services</a>
+          <a class="navlink" href="doctors.html">Doctors</a>
+          <a class="navlink" href="booking.html">Booking</a>
+          <a class="navlink" href="onboarding.html">Onboarding</a>
+          <a class="navlink" href="faq.html">FAQ</a>
+          <a class="navlink" href="testimonials.html">Testimonials</a>
+          <a class="navlink" href="contact.html">Contact</a>
+          <a class="px-4 py-2 rounded-md bg-primary text-white hover:bg-secondary" href="signup.html">Login/Signup</a>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden mt-2 space-y-2">
+        <a class="mobilelink" href="index.html">Home</a>
+        <a class="mobilelink" href="about.html">About</a>
+        <a class="mobilelink" href="services.html">Services</a>
+        <a class="mobilelink" href="doctors.html">Doctors</a>
+        <a class="mobilelink" href="booking.html">Booking</a>
+        <a class="mobilelink" href="onboarding.html">Onboarding</a>
+        <a class="mobilelink" href="faq.html">FAQ</a>
+        <a class="mobilelink" href="testimonials.html">Testimonials</a>
+        <a class="mobilelink" href="contact.html">Contact</a>
+        <a class="mobilelink" href="signup.html">Login/Signup</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="h1">Our Ayurvedic Doctors</h1>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <input type="text" placeholder="Search name or specialization..." class="input"/>
+        <select class="input"><option>All Specializations</option><option>Panchakarma</option><option>Rasayana</option><option>Balaroga</option></select>
+        <select class="input"><option>All Locations</option><option>Delhi</option><option>Mumbai</option><option>Bangalore</option></select>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <!-- Card -->
+        
+        <div class="card hover:shadow-lg">
+          <img src="anjali sharma.jpeg" class="w-full h-40 object-cover rounded-md" alt="Dr. Anjali Sharma portrait"/>
+          <div class="mt-4">
+            <h3 class="h3">Dr. Anjali Sharma</h3>
+            <p class="text-primary">Panchakarma Specialist</p>
+            <p class="text-gray-600 text-sm mt-1">12 Years • Mumbai</p>
+            <a href="booking.html" class="btn-primary mt-4 inline-block">Book</a>
+          </div>
+        </div>
+    
+        <div class="card hover:shadow-lg">
+          <img src="RAJESH PATEL (1).jpeg" class="w-full h-40 object-cover rounded-md" alt="Dr. Rajesh Patel portrait"/>
+          <div class="mt-4">
+            <h3 class="h3">Dr. Rajesh Patel</h3>
+            <p class="text-primary">Rasayana Expert</p>
+            <p class="text-gray-600 text-sm mt-1">20 Years • Delhi</p>
+            <a href="booking.html" class="btn-primary mt-4 inline-block">Book</a>
+          </div>
+        </div>
+    
+        <div class="card hover:shadow-lg">
+          <img src="PRIYA NAIR.jpg" class="w-full h-40 object-cover rounded-md" alt="Dr. Priya Nair portrait"/>
+          <div class="mt-4">
+            <h3 class="h3">Dr. Priya Nair</h3>
+            <p class="text-primary">Balaroga (Pediatrics)</p>
+            <p class="text-gray-600 text-sm mt-1">8 Years • Bangalore</p>
+            <a href="booking.html" class="btn-primary mt-4 inline-block">Book</a>
+          </div>
+        </div>
+    
+        <div class="card hover:shadow-lg">
+          <img src="KAVITA JOSHI.jpg" class="w-full h-40 object-cover rounded-md" alt="Dr. Kavita Joshi portrait"/>
+          <div class="mt-4">
+            <h3 class="h3">Dr. Kavita Joshi</h3>
+            <p class="text-primary">Skin & Hair</p>
+            <p class="text-gray-600 text-sm mt-1">10 Years • Pune</p>
+            <a href="booking.html" class="btn-primary mt-4 inline-block">Book</a>
+          </div>
+        </div>
+    
+        <div class="card hover:shadow-lg">
+          <img src="SAMEER KHAN (1).jpg" class="w-full h-40 object-cover rounded-md" alt="Dr. Sameer Khan portrait"/>
+          <div class="mt-4">
+            <h3 class="h3">Dr. Sameer Khan</h3>
+            <p class="text-primary">Kayachikitsa</p>
+            <p class="text-gray-600 text-sm mt-1">15 Years • Hyderabad</p>
+            <a href="booking.html" class="btn-primary mt-4 inline-block">Book</a>
+          </div>
+        </div>
+    
+        <div class="card hover:shadow-lg">
+          <img src="MEERA IYER.jpg" class="w-full h-40 object-cover rounded-md" alt="Dr. Meera Iyer portrait"/>
+          <div class="mt-4">
+            <h3 class="h3">Dr. Meera Iyer</h3>
+            <p class="text-primary">Women's Health</p>
+            <p class="text-gray-600 text-sm mt-1">9 Years • Chennai</p>
+            <a href="booking.html" class="btn-primary mt-4 inline-block">Book</a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-50 mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <h3 class="font-bold text-lg">Amrutam</h3>
+        </div>
+        <p class="text-gray-600 text-sm">Authentic Ayurvedic consultation platform connecting patients with certified doctors.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Company</h4>
+        <ul class="space-y-2 text-gray-600">
+          <li><a href="about.html" class="hover:text-primary">About</a></li>
+          <li><a href="services.html" class="hover:text-primary">Services</a></li>
+          <li><a href="doctors.html" class="hover:text-primary">Doctors</a></li>
+          <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Support</h4>
+        <ul class="space-y-2 text-gray-600">
+          <li><a href="faq.html" class="hover:text-primary">FAQ</a></li>
+          <li><a href="#" class="hover:text-primary">Terms</a></li>
+          <li><a href="#" class="hover:text-primary">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Get the app</h4>
+        <div class="space-y-2">
+          <a class="inline-block bg-black text-white px-4 py-2 rounded-lg" href="#">App Store</a>
+          <a class="inline-block bg-black text-white px-4 py-2 rounded-lg" href="#">Google Play</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t py-4 text-center text-sm text-gray-500">
+      © 2025 Amrutam. All rights reserved.
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
